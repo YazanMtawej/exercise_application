@@ -25,7 +25,7 @@ class _ExerciseViewBodyState extends State<ExerciseViewBody> {
       child: Column(
         children: [
           CustomAppBar(
-            title: 'Notes App',
+            title: 'Exercise App',
             icon: Icons.search,
           ),
           Expanded(child: ExerciseListView()),

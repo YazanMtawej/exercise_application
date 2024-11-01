@@ -32,7 +32,7 @@ String? title, sets,weights;
               BlocProvider.of<ExerciseCubit>(context).fetchAlExercise();
               Navigator.pop(context);
             },
-            title: 'Edit Note',
+            title: 'Edit Exercise',
             icon: Icons.check,
           ),
           const SizedBox(
@@ -42,7 +42,7 @@ String? title, sets,weights;
               onChanged: (value) {
                 title = value;
               },
-              hint: widget.exercises.title),
+              hint: 'Title ${widget.exercises.title}'),
           const SizedBox(
             height: 16,
           ),
@@ -50,8 +50,8 @@ String? title, sets,weights;
             onChanged: (value) {
               sets = value;
             },
-            hint: widget.exercises.sets,
-            maxLines: 5,
+            hint: 'Sets ${widget.exercises.sets}',
+            maxLines: 3,
           ),
            const SizedBox(
             height: 16,
@@ -60,8 +60,8 @@ String? title, sets,weights;
             onChanged: (value) {
               weights = value;
             },
-            hint: widget.exercises.weights,
-            maxLines: 5,
+            hint: 'Weights ${widget.exercises.weights}',
+            maxLines: 3,
           ),
            const SizedBox(
             height: 32,

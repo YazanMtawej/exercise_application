@@ -36,7 +36,7 @@ class _AddExerciseFormState extends State<AddExerciseForm> {
                   title = value;
                 },
                 maxLines: 1,
-                hint: 'title'),
+                hint: 'title Exercise'),
             const SizedBox(
               height: 16,
             ),
@@ -44,7 +44,7 @@ class _AddExerciseFormState extends State<AddExerciseForm> {
               onSaved: (value) {
                 sets = value;
               },
-              hint: 'content',
+              hint: 'Sets',
               maxLines: 2,
             ),
              const SizedBox(
@@ -54,7 +54,7 @@ class _AddExerciseFormState extends State<AddExerciseForm> {
               onSaved: (value) {
                 weights = value;
               },
-              hint: 'content',
+              hint: 'Weights',
               maxLines: 2,
             ),
             const SizedBox(
