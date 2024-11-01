@@ -1,17 +1,26 @@
 import 'package:device_preview/device_preview.dart';
+import 'package:exercise_application/Models/exercise_model.dart';
+import 'package:exercise_application/constants.dart';
 import 'package:exercise_application/views/exercise_view.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+
+void main() async{
+  //Bloc.observer = SimpleBlocObserver();
+  await Hive.initFlutter();
+  Hive.registerAdapter(ExerciseModelAdapter());
+  await Hive.openBox<ExerciseModel>(kNoteBox);
+
   runApp(DevicePreview(
       enabled: !kReleaseMode,
-      builder: (context) => const Exercise_App()), // Wrap your app
+      builder: (context) => const ExerciseApp()), // Wrap your app
     );
 }
 
-class Exercise_App extends StatelessWidget {
-  const Exercise_App({super.key});
+class ExerciseApp extends StatelessWidget {
+  const ExerciseApp({super.key});
 
   @override
   Widget build(BuildContext context) {
