@@ -1,6 +1,7 @@
 
 import 'package:exercise_application/cubit/add_exercise_cubit/add_exercise_cubit.dart';
 import 'package:exercise_application/cubit/exercise_cubit/exercise_cubit.dart';
+import 'package:exercise_application/widgets/add_exercise_form.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -33,14 +34,5 @@ class AddExerciseBottomSheet extends StatelessWidget {
       } ),
       
       );
-  }
-}
-
-class AddExerciseForm extends StatelessWidget {
-  const AddExerciseForm({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }

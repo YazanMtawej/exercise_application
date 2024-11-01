@@ -13,7 +13,7 @@ class AddExerciseCubit extends Cubit<AddExerciseState> {
   
   Color color= Colors.red;
 
-  addNote(ExerciseModel exercise)async{
+  addExercise(ExerciseModel exercise)async{
     exercise.color =color.value;
     emit(AddExerciseLoding());
    try {
