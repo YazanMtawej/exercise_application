@@ -1,6 +1,7 @@
 
 import 'package:exercise_application/cubit/exercise_cubit/exercise_cubit.dart';
 import 'package:exercise_application/widgets/custom_app_bar.dart';
+import 'package:exercise_application/widgets/exercise_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -27,18 +28,9 @@ class _ExerciseViewBodyState extends State<ExerciseViewBody> {
             title: 'Notes App',
             icon: Icons.search,
           ),
-          Expanded(child: NotesListView()),
+          Expanded(child: ExerciseListView()),
         ],
       ),
     );
-  }
-}
-
-class NotesListView extends StatelessWidget {
-  const NotesListView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }
