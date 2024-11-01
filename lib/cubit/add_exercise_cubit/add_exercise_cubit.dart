@@ -17,7 +17,7 @@ class AddExerciseCubit extends Cubit<AddExerciseState> {
     exercise.color =color.value;
     emit(AddExerciseLoding());
    try {
-  var notesBox =Hive.box<ExerciseModel>(kNoteBox);
+  var notesBox =Hive.box<ExerciseModel>(kExerciseBox);
   await notesBox.add(exercise);
   emit(AddExerciseSuccess());
 }  catch (e) {

@@ -11,7 +11,7 @@ void main() async{
   //Bloc.observer = SimpleBlocObserver();
   await Hive.initFlutter();
   Hive.registerAdapter(ExerciseModelAdapter());
-  await Hive.openBox<ExerciseModel>(kNoteBox);
+  await Hive.openBox<ExerciseModel>(kExerciseBox);
 
   runApp(DevicePreview(
       enabled: !kReleaseMode,
