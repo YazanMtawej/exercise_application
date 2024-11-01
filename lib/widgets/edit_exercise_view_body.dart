@@ -2,6 +2,7 @@ import 'package:exercise_application/Models/exercise_model.dart';
 import 'package:exercise_application/cubit/exercise_cubit/exercise_cubit.dart';
 import 'package:exercise_application/widgets/custom_app_bar.dart';
 import 'package:exercise_application/widgets/custom_text_field.dart';
+import 'package:exercise_application/widgets/edit_exercise_colors_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -66,9 +67,9 @@ String? title, sets,weights;
            const SizedBox(
             height: 32,
           ),
-           //EditNoteColorsList(
-          //  notes: widget.exercises,
-         //  ),
+           EditExerciseColorsList(
+            exercises: widget.exercises,
+           ),
         ],
       ),
     );
