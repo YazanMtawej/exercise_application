@@ -1,6 +1,7 @@
 
 import 'package:exercise_application/Models/exercise_model.dart';
 import 'package:exercise_application/cubit/add_exercise_cubit/add_exercise_cubit.dart';
+import 'package:exercise_application/widgets/colors_list_view.dart';
 import 'package:exercise_application/widgets/custom_button.dart';
 import 'package:exercise_application/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
@@ -59,7 +60,7 @@ class _AddExerciseFormState extends State<AddExerciseForm> {
             const SizedBox(
               height: 32,
             ),
-            //const ColorsListView(),
+            const ColorsListView(),
             const SizedBox(
               height: 32,
             ),
